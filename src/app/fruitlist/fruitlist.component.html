@@ -1,0 +1,5 @@
+<div class="fruitlist_content">
+    @for(singlefruit of fruitlistdata.fruitlist; track singlefruit.name; let index = $index){
+        <app-singlefruit (fruitname)="addComment($event, index)" [fruit]="singlefruit"></app-singlefruit>  
+    }
+</div>
